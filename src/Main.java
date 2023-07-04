@@ -8,9 +8,12 @@ public class Main {
             game = new Game(args[0], Integer.parseInt(args[1]));
         } else if (args.length == 1) {  // servidor (porta)
             game = new Game(Integer.parseInt(args[0]));
+        } else {
+            System.out.println("Uso: java -jar GuessTheNumber.jar <porta>");
+            System.out.println("Uso: java -jar GuessTheNumber.jar <ip> <porta>");
+            return;
         }
 
         game.run();
-        System.out.println("Hello world!");
     }
 }

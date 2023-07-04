@@ -13,10 +13,12 @@ public class Game {
     private NumberGuesser numberGuesser;
     private CommandLineInterface cli;
     private String position;
+    private boolean endGame;
 
     private void initialize() {
         numberGuesser = new NumberGuesser();
         cli = new CommandLineInterface();
+        endGame = false;
     }
 
     public Game(int port) {
@@ -57,33 +59,39 @@ public class Game {
         String remoteGuessStr = network.receiveMessage();
         int remoteGuess = Integer.parseInt(remoteGuessStr);
         network.sendMessage(Integer.toString(numberGuesser.checkGuess(remoteGuess)));
+        cli.printOpponentGuess(remoteGuess);
+    }
+
+    private void processRemoteResponse(String response) {
+        int responseInt = Integer.parseInt(response);
+        String responseResult = responseInt == 0 ? "acertou" : responseInt < 0 ? "menor" : "maior";
+        cli.printGuessResult(responseResult);
     }
 
     private void processLocalGuess() throws IOException {
         int guess = cli.askForGuess();
         network.sendMessage(Integer.toString(guess));
         String answerStr = network.receiveMessage();
-        int answer = Integer.parseInt(answerStr);
-        cli.printGuessResult(answer);
-    }
-
-    private void processRemoteGuess(String guess) {
-        int numberGuess = Integer.parseInt(guess);
-        cli.printOpponentGuess(numberGuess);
+        processRemoteResponse(answerStr);
     }
 
     private void processGuesses() throws IOException {
-        String answer;
-        String remoteGuess;
         if (this.position.equals("first")) {
             processLocalGuess();
-            remoteGuess = network.receiveMessage();
-            processRemoteGuess(remoteGuess);
+            processRemoteGuess();
         } else {
-            remoteGuess = network.receiveMessage();
-            processRemoteGuess(remoteGuess);
+            processRemoteGuess();
             processLocalGuess();
         }
     }
 
+    public void run() {
+        getUserNumber();
+        try {
+            checkFirst();
+            processGuesses();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3255f85f-aef5-4d10-af5e-41c8b98e870f" name="Changes" comment="">
+    <list default="true" id="3255f85f-aef5-4d10-af5e-41c8b98e870f" name="Changes" comment="Add classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/GuessTheNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/GuessTheNumber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tech/gregori/business/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/business/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/business/NumberGuesser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/business/NumberGuesser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/cli/CommandLineInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/cli/CommandLineInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/network/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/network/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/network/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/network/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tech/gregori/network/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tech/gregori/network/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,20 +30,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
@@ -70,11 +64,27 @@
       <updated>1686785266959</updated>
       <workItem from="1686785269198" duration="3157000" />
       <workItem from="1686879977468" duration="1210000" />
-      <workItem from="1687212731726" duration="3930000" />
+      <workItem from="1687212731726" duration="6163000" />
+      <workItem from="1687819061239" duration="633000" />
+      <workItem from="1687904715925" duration="428000" />
+      <workItem from="1688512244641" duration="181000" />
+      <workItem from="1688512817225" duration="357000" />
     </task>
+    <task id="LOCAL-00001" summary="Add classes">
+      <created>1687306878203</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687306878203</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add classes" />
   </component>
 </project>
